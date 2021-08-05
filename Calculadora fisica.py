@@ -4,30 +4,30 @@ limite = int(input("Cuantas veces desea usar la calculadora "))
 i = 0
 
 def distancia():
-    v = int(input("Ingrese la velocidad "))
-    t = int(input("Ingrese el tiempo "))
+    v = float(input("Ingrese la velocidad "))
+    t = float(input("Ingrese el tiempo "))
     d = v * t
     print("El resultado es: ", d )
 
 def velocidad():
-    d = int(input("Ingrese la distancia "))
-    t = int(input("Ingrese el tiempo "))
+    d = float(input("Ingrese la distancia "))
+    t = float(input("Ingrese el tiempo "))
     v = d / t
     print("El resultado es: ", v)
 
 def tiempo():
-    d = int(input("Ingrese la distancia "))
-    v = int(input("Ingrese la velocidad "))
+    d = float(input("Ingrese la distancia "))
+    v = float(input("Ingrese la velocidad "))
     t = d / v
     print("El resultado es: ", t)
 
 def km_a_m():
-    km = int(input("Ingrese los kilometros "))
+    km = float(input("Ingrese los kilometros "))
     m = km * 1000
     print("El resultado es: ", m ," metros")
 
 def hrs_a_s():
-    h = int(input("Ingrese las horas "))
+    h = float(input("Ingrese las horas "))
     s = h * 3600
     print("El resultado es: ", s, " segundos")
 
