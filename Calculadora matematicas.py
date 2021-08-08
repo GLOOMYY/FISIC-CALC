@@ -45,7 +45,12 @@ def raiz_cuadrada():
         resultado = cmath.sqrt(numero1)
         print("el resultado es: ", resultado)
     
-    
+def logaritmación():
+    numero1 = float(input("Ingrese numero"))
+    numero2 = float(input("Ingrese base"))    
+    resultado = math.log(numero1, numero2)
+    print("el resultado es: ", resultado)
+
 
 for i in range(limite):
     i= i+1
@@ -56,6 +61,7 @@ for i in range(limite):
     print("4. División")
     print("5. Potenciación")
     print("6. Raiz cuadrada")
+    print("7. Logaritmación")
     print("0. Salir")
     opcion = int(input("Selecciona la operacion a realizar "))
     if (opcion == 1):
@@ -70,8 +76,11 @@ for i in range(limite):
         potenciacion()
     elif (opcion == 6):
         raiz_cuadrada()
+    elif (opcion == 7):
+        logaritmación()
     elif (opcion == 0):
         print("")
+        break
     else:
         print("Opcion incorrecta")
 
