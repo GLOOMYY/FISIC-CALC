@@ -1,8 +1,6 @@
 #calculadora fisica
 import os
 
-limite = int(input("Cuantas veces desea usar la calculadora "))
-i = 0
 
 def distancia():
     print("Distancia")
@@ -56,6 +54,19 @@ def porcentaje_error():
     error_relati = float(input("Ingreese el error relativo "))
     resultado = error_relati*(100/100)
     print("El porcentaje de error es de: ", resultado, "%")
+
+
+print("""
+ _______  __       _______  __    ______      ___
+|   ____||  |     /       ||  |  /      |    /   \     
+|  |__   |  |    |   (----`|  | |  ,----'   /  ^  \    
+|   __|  |  |     \   \    |  | |  |       /  /_\  \   
+|  |     |  | .----)   |   |  | |  `----. /  _____  \  
+|__|     |__| |_______/    |__|  \______|/__/     \__\ 
+                    """)
+
+limite = int(input("Cuantas veces desea usar la calculadora "))
+i = 0
 
 
 for i in range(limite):
