@@ -42,20 +42,20 @@ def error_absoluto():
     valor_teorico = float(input("Ingrese el valor teorico "))
     valor_experimental = float((input("Ingrese el valor experimental ")))
     resultado = abs(valor_teorico - valor_experimental)
-    return resultado
+    print("El error absoluto es: ", resultado)
 
 def error_relativo():
     print("Error relativo")
     error_absolut = float(input("Ingrese el error absoluto "))
     valor_teorico = float(input("Ingrese el valor teorico "))
     resultado = error_absolut/valor_teorico
-    return resultado
+    print("El error relativo es: ", resultado)
 
 def porcentaje_error():
     print("Porcentaje de error")
     error_relati = float(input("Ingreese el error relativo "))
     resultado = error_relati*(100/100)
-    return resultado
+    print("El porcentaje de error es de: ", resultado, "%")
 
 
 for i in range(limite):
@@ -89,14 +89,11 @@ for i in range(limite):
         opcion_error = int(input("Seleccione la operacion a realizar "))
         os.system ("cls") 
         if (opcion_error == 1):
-            resultado = error_absoluto()
-            print("El error absoluto es: ", resultado)
+            error_absoluto()
         elif (opcion_error == 2):
-            resultado = error_relativo()
-            print("El error relativo es: ", resultado)
+            error_relativo()
         elif (opcion_error == 3):
-            resultado = porcentaje_error()
-            print("El porcentaje de error es de: ", resultado, "%")
+            porcentaje_error()
         elif (opcion_error == 0):
             print("")
         else:
