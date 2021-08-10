@@ -3,9 +3,6 @@ import cmath
 import math
 
 
-limite = int(input("Cuantas veces desea usar la calculadora"))
-i = 0
-
 def suma():
     numero1 = float(input("Ingrese un numero "))
     numero2 = float(input("Ingrese un numero "))
@@ -50,6 +47,17 @@ def logaritmación():
     numero2 = float(input("Ingrese base"))    
     resultado = math.log(numero1, numero2)
     print("el resultado es: ", resultado)
+
+print("""
+ ___  ___       ___       ___________  __    __  
+|   \/   |     /   \     |           ||  |  |  | 
+|  \  /  |    /  ^  \    `---|  |----`|  |__|  | 
+|  |\/|  |   /  /_\  \       |  |     |   __   | 
+|  |  |  |  /  _____  \      |  |     |  |  |  | 
+                    """)
+
+limite = int(input("Cuantas veces desea usar la calculadora"))
+i = 0
 
 
 for i in range(limite):
