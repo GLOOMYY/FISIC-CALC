@@ -1,59 +1,14 @@
 #calculadora
-import cmath
-import math
+import modulo_matematicas
 
 
-def suma():
-    numero1 = float(input("Ingrese un numero "))
-    numero2 = float(input("Ingrese un numero "))
-    resultado = numero1 + numero2
-    print("El resultado es: ", resultado)
-
-def resta():
-    numero1 = float(input("Ingrese un numero "))
-    numero2 = float(input("Ingrese un numero "))
-    resultado = numero1 - numero2
-    print("El resultado es: ", resultado)
-
-def multiplicacion():
-    numero1 = float(input("Ingrese un numero "))
-    numero2 = float(input("Ingrese un numero "))
-    resultado = numero1 * numero2
-    print("El resultado es: ", resultado)
-
-def division():
-    numero1 = float(input("Ingrese un numero "))
-    numero2 = float(input("Ingrese un numero ")) 
-    resultado = numero1 / numero2
-    print("El resultado es: ", resultado)
-
-def potenciacion():
-    numero1 = float(input("Ingrese el numero que desea potenciar "))
-    numero2 = float(input("Ingrese el numero al que lo desea elevar "))
-    resultado = pow(numero1,numero2)
-    print("El resultado es: ", resultado)
-
-def raiz_cuadrada():
-    numero1 = float(input("Ingrese al numero que le desea sacar la raiz cuadrada "))
-    if (numero1 > 0) :
-        resultado = math.sqrt(numero1)
-        print("el resultado es: ", resultado)
-    else:
-        resultado = cmath.sqrt(numero1)
-        print("el resultado es: ", resultado)
-    
-def logaritmación():
-    numero1 = float(input("Ingrese numero"))
-    numero2 = float(input("Ingrese base"))    
-    resultado = math.log(numero1, numero2)
-    print("el resultado es: ", resultado)
 
 print("""
  ___  ___       ___       ___________  __    __  
 |   \/   |     /   \     |           ||  |  |  | 
 |  \  /  |    /  ^  \    `---|  |----`|  |__|  | 
 |  |\/|  |   /  /_\  \       |  |     |   __   | 
-|  |  |  |  /  _____  \      |  |     |  |  |  | 
+|__|  |__|  /  _____  \      |__|     |__|  |__| 
                     """)
 
 limite = int(input("Cuantas veces desea usar la calculadora"))
@@ -73,19 +28,19 @@ for i in range(limite):
     print("0. Salir")
     opcion = int(input("Selecciona la operacion a realizar "))
     if (opcion == 1):
-        suma()
+        modulo_matematicas.suma()
     elif (opcion == 2):
-        resta()
+        modulo_matematicas.resta()
     elif (opcion == 3):
-        multiplicacion()
+        modulo_matematicas.multiplicacion()
     elif (opcion == 4):
-        division()
+        modulo_matematicas.division()
     elif (opcion == 5):
-        potenciacion()
+        modulo_matematicas.potenciacion()
     elif (opcion == 6):
-        raiz_cuadrada()
+        modulo_matematicas.raiz_cuadrada()
     elif (opcion == 7):
-        logaritmación()
+        modulo_matematicas.logaritmación()
     elif (opcion == 0):
         print("")
         break
